@@ -1,0 +1,78 @@
+/* 0 - Imports
+ ***********************************/
+ @charset "utf-8";
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600');
+ 
+ /* 1 - Common
+  ***********************************/
+ html, body {
+     margin: 0;
+     padding: 0;
+ }
+ body {
+     font: normal 90% "Open Sans", tahoma, verdana, arial, helvetica, sans-serif;
+     color: #222;
+ }
+ header h1, nav ul, section, footer > div {
+     width: 100%;
+     max-width: 1100px;
+     margin: 0 auto;
+ }
+ 
+ /* 2 - Header
+  ***********************************/
+ header {
+     height: 200px;
+     line-height: 115px;
+     background: rgb(97,126,199);
+     background: linear-gradient(45deg, rgba(97,126,199,1) 0%, rgba(208,215,241,1) 50%, rgba(97,126,199,1) 100%);
+ }
+ header a {
+     text-decoration: none;
+     color: #111;
+ }
+ header h1 {
+     padding: .3em 0;
+     font-family: "Cormorant Garamond";
+     font-weight: 600;
+     font-size: 4em;
+     vertical-align: middle;
+     text-align: center;
+ }
+ header img {
+     float: left;
+     vertical-align: middle;
+ }
+ 
+ /* 3 - Navigation
+  ***********************************/
+ nav {
+     background: rgba(0,0,0,.05);
+     height: 40px;
+     margin-top: -40px;
+ }
+ nav ul {
+     padding: 0;
+     text-align: center;
+ }
+ nav li {
+     display: inline-block;
+     list-style-type: none;
+ }
+ nav li a {
+     display: inline-block;
+     height: 40px;
+     padding: 0 1em;
+     line-height: 40px;
+     font-size: 1.1em;
+     text-decoration: none;
+     color: #111;
+     transition: all.3s ease;
+ }
+ nav li a:hover {
+     background: rgba(0,0,0,.1);
+ }
+ nav li.active a {
+     background: rgba(0,0,0,.5)
+ }
