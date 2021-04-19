@@ -15,7 +15,7 @@ $res = "";
 $current = $_SERVER['REQUEST_URI'];
 foreach ($menu as $item => $url) {
     $res .= "\t\t\t\t<li" . (strpos($current, $url) === 0 || $current == '/' && $url == '/index.php' ? ' class="active"' : '')
-        . '><a href="' . $url . '">' . $item . '</a></li>';
+        . '><a href="' . $url . '">' . $item . "</a></li>\n";
 }
 echo $res;
 ?>
