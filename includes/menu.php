@@ -1,12 +1,23 @@
 <?php if (!defined('SITE')) exit; ?>
 
-    <nav>
-      <ul>
-        <li><a href="/trainers.php">Тренеры</a></li>
-        <li><a href="/timetable.php">Расписание</a></li>
-        <li><a href="/index.php">Главная</a></li>
-        <li><a href="/directions.php">Направления</a></li>
-        <li><a href="/gallery.php">Галерея</a></li>
-        <li><a href="/gallery.php">Документация</a></li>
-      </ul>
-    </nav>
+        <nav>
+            <ul>
+<?php
+$menu = [
+    "Тренеры" => "/trainers.php",
+    "Расписание" => "/timetable.php",
+    "Главная" => "/index.php",
+    "Направления" => "/directions.php",
+    "Галерея" => "/gallery.php",
+    "Документация" => "/documents.php"
+];
+$res = "";
+$current = $_SERVER['REQUEST_URI'];
+foreach ($menu as $item => $url) {
+    $res .= "\t\t\t\t<li" . (strpos($current, $url) === 0 || $current == '/' && $url == '/index.php' ? ' class="active"' : '')
+        . '><a href="' . $url . '">' . $item . '</a></li>';
+}
+echo $res;
+?>
+            </ul>
+        </nav>

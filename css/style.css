@@ -68,11 +68,12 @@
      font-size: 1.1em;
      text-decoration: none;
      color: #111;
-     transition: all.3s ease;
+     transition: background-color .3s ease;
  }
  nav li a:hover {
      background: rgba(0,0,0,.1);
  }
- nav li.active a {
-     background: rgba(0,0,0,.5)
+ nav li.active a,
+ nav li.active a:hover {
+     background: rgba(0,0,0,.07)
  }
