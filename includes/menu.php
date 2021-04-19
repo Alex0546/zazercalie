@@ -8,7 +8,6 @@ $menu = [
     "Расписание" => "/timetable.php",
     "Главная" => "/index.php",
     "Направления" => "/directions.php",
-    "Галерея" => "/gallery.php",
     "Документация" => "/documents.php"
 ];
 $res = "";

@@ -8,7 +8,7 @@ require SITE_ROOT . 'includes/common.php';
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/css/style.css?v=6" />
+        <link rel="stylesheet" href="/css/style.css?v=16" />
     </head>
     <body>
         <header>

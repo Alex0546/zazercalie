@@ -2,13 +2,16 @@
 
     <footer>
         <div>
-            <h3>Контакты:</h3>
-            <div>+7 (927) 776-59-35 
-                https://vk.com/zazercalie_air
+            <div class="contacts">
+                +7 (927) 776-59-35<br />
+                Московское шоссе, 34а<br />
+                <a href="https://vk.com/zazercalie_air" class="social-icon"><img src="/img/vk.svg" /></a>
+                <a href="https://instagram.com/zazercalie.air" class="social-icon"><img src="/img/instagram.svg" /></a><br />
+                <a href="mailto:zazercalie.air@yandex.ru">zazercalie.air@yandex.ru</a>
             </div>
-            <h3>Адрес:</h3>
-            <div>Московское шоссе, 34а</div>
-            <div>&#169; <?php echo date('Y');?> Студия воздушного танца</div>
+            <div class="copyright">
+                &#169; <?php echo date('Y');?> Студия воздушного танца &laquo;Зазеркалье&raquo;
+            </div>
         </div>
     </footer>
 
