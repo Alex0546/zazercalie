@@ -1,3 +1,4 @@
+<?php if (!defined('SITE')) exit; ?>
 
 <meta charset="utf-8">
     <footer>

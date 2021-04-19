@@ -1,3 +1,5 @@
+<?php if (!defined('SITE')) exit; ?>
+
     <nav>
       <ul>
         <li><a href="/trainers.php">Тренеры</a></li>

@@ -1,6 +1,7 @@
 <?php 
-define('SITE_ROOT', './');
-require SITE_ROOT . 'common.php';
+if (!defined('SITE')) exit;
+define('SITE_ROOT', '../');
+require SITE_ROOT . 'includes/common.php';
 ?>
 
 <!DOCTYPE html>
@@ -11,10 +12,10 @@ require SITE_ROOT . 'common.php';
   <body>
     <header>
 
-      <h1><img src="/img/logoMainB.png" width="150" alt="Логотип студии" align="middle"> Студия воздушного танца </h1>
+      <h1><img src="/img/logoMainB.png" width="150" alt="Логотип студии">Студия воздушного танца</h1>
 
     </header>
 
 <?php
-include(SITE_ROOT . 'menu.php');
+include(SITE_ROOT . 'includes/menu.php');
 ?>

@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
- <head>
-  <meta charset="utf-8" />
-  <title>Document</title>
-  <link rel="stylesheet" href="css/style.css">
- </head>
- <body>
-   Зазеркалье
-<img src="img/logoMainB.png" alt="Логотип студии">
-   <p>Добро пожаловать в мир чудес и невесомости!</p>
+<?php
+define('SITE', 1);
+define('SITE_ROOT', './');
+require SITE_ROOT . 'includes/header.php';
+?>
+
+  <p>Добро пожаловать в мир чудес и невесомости!</p>
   <p>Воздушная гимнастика, растяжка и акробатика для всех желающих!</p>
   <p>Воздушная гимнастика, растяжка и акробатика для всех желающих!</p>
   <table width="1000" >
@@ -19,5 +15,6 @@
  </table>
 
 
- </body>
-</html>
+<?php
+require SITE_ROOT . 'includes/footer.php';
+?>
