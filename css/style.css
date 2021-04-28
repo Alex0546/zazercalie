@@ -1,0 +1,179 @@
+/* 0 - Imports
+ ***********************************/
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600');
+  
+/* 1 - Common
+ ***********************************/
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+    font: normal 90% "Open Sans", tahoma, verdana, arial, helvetica, sans-serif;
+    color: #222;
+}
+header h1, nav ul, section, footer > div {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+section {
+    padding: 1em 0;
+}
+p {
+    margin: 0 0 1em;
+}
+  
+/* 2 - Header
+ ***********************************/
+header {
+    height: 200px;
+    line-height: 115px;
+    background: rgb(97,126,199);
+    background: linear-gradient(45deg, rgba(97,126,199,1) 0%, rgba(208,215,241,1) 50%, rgba(97,126,199,1) 100%);
+}
+header a {
+    text-decoration: none;
+    color: #111;
+}
+header h1 {
+    padding: .3em 0;
+    font-family: "Cormorant Garamond";
+    font-weight: 600;
+    font-size: 4em;
+    vertical-align: middle;
+    text-align: center;
+}
+header img {
+    float: left;
+    vertical-align: middle;
+}
+ 
+/* 3 - Navigation
+ ***********************************/
+nav {
+    background: rgba(0,0,0,.05);
+    height: 40px;
+    margin-top: -40px;
+}
+nav ul {
+    padding: 0;
+    text-align: center;
+}
+nav li {
+    display: inline-block;
+    list-style-type: none;
+}
+nav li a {
+    display: inline-block;
+    height: 40px;
+    padding: 0 1em;
+    line-height: 40px;
+    font-size: 1.1em;
+    text-decoration: none;
+    color: #111;
+    transition: background-color .3s ease;
+}
+nav li a:hover {
+    background: rgba(0,0,0,.1);
+}
+nav li.active a,
+nav li.active a:hover {
+    background: rgba(0,0,0,.07)
+}
+
+/* 4 - Footer
+ ***********************************/
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1em 0;
+    min-height: 120px;
+    box-sizing: border-box;
+    background: #666;
+    color: #fff;
+}
+footer .contacts {
+    float: right;
+}
+footer .social-icon img {
+    height: 16px;
+    max-width: 250px;
+    filter: invert(100%);
+    opacity: .75;
+    margin: .5em .5em .5em 0;
+}
+footer .social-icon:hover img {
+    opacity: 1;
+}
+footer a {
+    color: #fff;
+}
+footer a:hover {
+    text-decoration: none;
+}
+
+/* 5 - Slider
+ ***********************************/
+#main-slider {
+    position: relative;
+    height: 45vw;
+    background: #ccc;
+}
+.slider-page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    text-decoration: none;
+}
+.slider-page-description {
+    display: block;
+    max-width: 1100px;
+    margin: 25vw auto 0;
+    line-height: 1em;
+    font-size: 5em;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+.slider-page-description-inner {
+    line-height: 138%;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: -30px 0 0 rgba(0, 0, 0, .3), 30px 0 0 rgba(0, 0, 0, .3);
+}
+#slider-buttons {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    bottom: 0;
+    text-align: center;
+    z-index: 1;
+}
+.slider-button {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+.slider-button::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, .5);
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, .1);
+    border-radius: 50%;
+    transition: all.5s ease;
+}
+.slider-button.active::before {
+    background: #fff;
+}
