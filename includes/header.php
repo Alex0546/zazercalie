@@ -1,4 +1,4 @@
-<?php 
+<?php
 if (!defined('SITE')) exit;
 define('SITE_ROOT', '../');
 require SITE_ROOT . 'includes/common.php';
@@ -8,7 +8,7 @@ require SITE_ROOT . 'includes/common.php';
 <html lang="ru">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/css/style.css?v=17" />
+        <link rel="stylesheet" href="/css/style.css?v=18" />
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     </head>
     <body>
