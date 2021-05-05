@@ -180,3 +180,35 @@ footer a:hover {
 .slider-button.active::before {
     background: #fff;
 }
+
+/* 6 - VK-wall
+ ***********************************/
+#vk-wall {
+
+}
+.vk-post {
+
+}
+/*
+#vk-post-{post-id} {
+
+}
+*/
+.vk-post-title {
+
+}
+.vk-post-author {
+
+}
+.vk-post-date {
+
+}
+.vk-post-avatar {
+
+}
+.vk-post-content {
+
+}
+.vk-post-attachments {
+    
+}
