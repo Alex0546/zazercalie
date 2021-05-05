@@ -1,7 +1,7 @@
 import requests
 import csv
 import datetime
-from lxml import etree
+from bs4 import BeautifulSoup
 
 def get_all_posts():
     token = '5b87fca85b87fca85b87fca8645bf069ff55b875b87fca83b02ba68ce028cb3a25b392b'
@@ -72,16 +72,19 @@ def take_posts_data(posts):
                     title = attachment['title']
                     url = attachment['url']
 
+# not use
 def get_name_of_group():
     id_group = 'zazercalie_air'
     url_group = 'https://vk.com/' + id_group
     response = requests.get(url_group)
     html = response.text
-    root = etree.fromstring(html)
-    return root.xpath('//*[@id="page_block_group_main_info"]/div[1]/h1')[0].text
+    soup = BeautifulSoup(html, 'lxml')
+    print(soup.h1)
 
 posts = get_all_posts()
 take_posts_data(posts)
-name_of_group = get_name_of_group()
+name_of_group = 'Студия воздушного танца "Зазеркалье" | Самара'
+avarar_of_group = 'https://sun7-8.userapi.com/s/v1/ig2/IIvqfGZpuT7TUqx0IvMiUsiNQfU-ryOnsk0eozSPxsoh0iWyq1NrkSixwK2B4qaC5g4xu5OC8YDT4QoGtUSboHcP.jpg?size=200x0&quality=96&crop=0,0,525,559&ava=1'
 
+# for debug
 print(1)
