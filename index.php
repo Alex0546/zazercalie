@@ -73,9 +73,9 @@ require SITE_ROOT . 'includes/header.php';
   </section>
   <section>
     <div id="vk-wall">
-      <!-- много div-ов -->
-      <a href="{vk-link-to-post}">
-        <div class="vk-post" id="vk-post-{post-id}">
+      <!-- много div-ов -->  
+      <div class="vk-post" id="vk-post-{post-id}">
+        <a href="{vk-link-to-post}">
           <div class="vk-post-title">
             <div class="vk-post-author">{vk-post-name}</div>
             <div class="vk-post-date">{vk-post-date}</div>
@@ -98,8 +98,8 @@ require SITE_ROOT . 'includes/header.php';
               </a>
             </span>
           </div>
-        </div>
-      </a>
+        </a>
+      </div>
       <!-- много div-ов -->
     </div>
   </section>
