@@ -85,7 +85,18 @@ require SITE_ROOT . 'includes/header.php';
             {vk-post-text}
           </div>
           <div class="vk-post-attachments">
-            <!-- вложения -->
+            <!-- вложение - фото -->
+            <span class="vk-post-attachment">
+              <a href="{link-to-photo}">
+                <img src="{link-to-photo-preview}">
+              </a>
+            </span>
+            <!-- вложение - документ -->
+            <span class="vk-post-attachment-description">
+              <a href="{link-to-document}">
+                {name-of-document}
+              </a>
+            </span>
           </div>
         </div>
       </a>
