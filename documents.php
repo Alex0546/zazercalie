@@ -7,51 +7,53 @@ require SITE_ROOT . 'includes/header.php';
 
   <section>
     <h2>Стоимость занятий</h2>
-    <table width="600" border="1" cellpadding="4" cellspacing="0">
+    <table width="400" border="1" cellpadding="4" cellspacing="0">
    <tr>
-    <th colspan="2">Разовое занятие</th>
+    <td colspan="2" align="center">Разовое занятие</td>
    </tr>
    <tr>
-    <th>Пробное занятие</th><th>200</th>
+    <td>Пробное занятие</td><td>200</td>
+  </tr>
+   <tr>
+    <td>Разовое заянтие</td><td>375</td>
    </tr>
    <tr>
-    <th>Разовое заянтие</th><th>375</th>
+    <td>Разовое заянтие (акробатика)</td><td>400</td>
    </tr>
    <tr>
-    <th>Разовое заянтие (акробатика)</th><th>400</th>
+    <td>Индивидуальное заянтие</td><td>1250</td>
    </tr>
    <tr>
-    <th>Индивидуальное заянтие</th><th>1250</th>
+    <td colspan="2" align="center">Абонементы (30 дней)</td>
    </tr>
    <tr>
-    <th colspan="2">Абонементы (30 дней)</th>
+    <td>4 занятия</td><td>1400</td>
    </tr>
    <tr>
-    <th>4 занятия</th><th>1400</th>
+    <td>8 занятий</td><td>2600</td>
    </tr>
    <tr>
-    <th>8 занятий</th><th>2600</th>
+    <td>12 занятий</td><td>3500</td>
    </tr>
    <tr>
-    <th>12 занятий</th><th>3500</th>
+    <td>16 занятий</td><td>4400</td>
    </tr>
    <tr>
-    <th>16 занятий</th><th>4400</th>
+    <td colspan="2" align="center">Абонементы акробатика</td>
    </tr>
    <tr>
-    <th colspan="2">Абонементы акробатика</th>
+    <td>4 занятия (на 45 дней)</td><td>1500</td>
    </tr>
    <tr>
-    <th>4 занятия (на 45 дней)</th><th>1500</th>
-   </tr>
-   <tr>
-    <th>8 занятий (на 90 дней)</th><th>2800</th>
+    <td>8 занятий (на 90 дней)</td><td>2800</td>
    </tr>
   </table>
+
+  <h2>Правила студии</h2>
     <p>
       <object width="1000" height="1000">
         <details><summary>Правила посещения студии</summary><embed src="../docs/pravila_pos.pdf" width="1000" height="1000" /></details>
-        <details><summary>Правила пользования абонемента</summary><embed src="../docs/pravila_abons.pdf" width="1000" height="1000" /></details>
+        <details><summary>Правила пользования абонементом</summary><embed src="../docs/pravila_abons.pdf" width="1000" height="1000" /></details>
       </object>
     </p>
 
