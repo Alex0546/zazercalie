@@ -1,16 +1,24 @@
 <?php
 define('SITE', 1);
 define('SITE_ROOT', './');
+define('PAGE_TITLE', 'Тренеры');
 require SITE_ROOT . 'includes/header.php';
 ?>
 
   <section>
-    <h2 class="sub-header">Мария Ермохина - главный тренер по воздушным направлениям</h2>
-    <img src="img/photo-tr-01.jpg" width="300" alt="Фото Мария">
-    <h2 class="sub-header">Анна Тарасова - тренер по воздушному полотну, креативный директор</h2>
-    <img src="img/photo-tr-02.jpg" width="300" alt="Фото Анна">
-    <h2 class="sub-header">Ян Мишанин - тернер по акробатике и трикингу</h2>
-    <img src="img/photo-tr-03.jpg" width="300" alt="Фото Ян">
+    <?php
+
+$query = mysqli_query($link, "SELECT * FROM `trainer`");
+$res = "";
+while($row = mysqli_fetch_assoc($query)) {
+    $res .= '<h2 class="sub-header">' . $row['name'] . " " . $row['surname'] . " &mdash; <em>" . $row['desc'] . '</em></h2>'."\n";
+    if ($row['photo'])
+        $res .= '<img src="' . $row['photo'] . '" width="300" alt="Фото ' . $row['name'] .'" />'."\n";
+    $res .= "<p>" . $row['full_desc'] . "</p>\n";
+}
+echo $res;
+      ?>
+
   </section>
 
 <?php

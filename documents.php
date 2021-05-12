@@ -1,6 +1,7 @@
 <?php
 define('SITE', 1);
 define('SITE_ROOT', './');
+define('PAGE_TITLE', 'Документация');
 require SITE_ROOT . 'includes/header.php';
 ?>
 

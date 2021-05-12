@@ -71,7 +71,27 @@ require SITE_ROOT . 'includes/header.php';
     <p>Добро пожаловать в мир чудес и невесомости!</p>
     <p>Воздушная гимнастика, растяжка и акробатика для всех желающих!</p>
   </section>
-
+  <section>
+    <div id="vk-wall">
+      <!-- много div-ов -->
+      <a href="{vk-link-to-post}">
+        <div class="vk-post" id="vk-post-{post-id}">
+          <div class="vk-post-title">
+            <div class="vk-post-author">{vk-post-name}</div>
+            <div class="vk-post-date">{vk-post-date}</div>
+            <div class="vk-post-avatar"><img src="{vk-link-to-avatar}"/></div>
+          </div>  
+          <div class="vk-post-content">
+            {vk-post-text}
+          </div>
+          <div class="vk-post-attachments">
+            <!-- вложения -->
+          </div>
+        </div>
+      </a>
+      <!-- много div-ов -->
+    </div>
+  </section>
 <?php
 require SITE_ROOT . 'includes/footer.php';
 ?>
