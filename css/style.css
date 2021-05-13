@@ -224,12 +224,16 @@ footer a:hover {
     vertical-align: top;
 }
 .timetable-header-cell {
+    margin: .2em;
     padding: .3em 0;
     text-align: center;
     font-weight: 700;
+    background: #c3cdec;
 }
 .timetable-cell {
+    margin: .2em;
     padding: .3em .8em;
+    background: rgba(0,0,0,.09)
 }
 .timetable-cell_time {
     display: block;
