@@ -9,7 +9,7 @@ require SITE_ROOT . 'includes/common.php';
     <head>
         <title><?php echo defined('PAGE_TITLE') ? PAGE_TITLE . " — " . SITE_TITLE : SITE_TITLE ?></title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="/css/style.css?v=18" />
+        <link rel="stylesheet" href="/css/style.css?v=19" />
         <script type="text/javascript" src="https://ajax.​googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     </head>
     <body>
