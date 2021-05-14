@@ -14,6 +14,11 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
 
+    <div id="vk_community_messages"></div>
+    <script type="text/javascript">
+    VK.Widgets.CommunityMessages("vk_community_messages", 91522677, {disableExpandChatSound: "1",disableButtonTooltip: "1"});
+    </script>
   </body>
 </html>
