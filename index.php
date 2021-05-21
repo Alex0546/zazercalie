@@ -74,7 +74,7 @@ require SITE_ROOT . 'includes/header.php';
   <section>
     <div id="vk-wall">
       <!-- много div-ов -->  
-      <div class="vk-post" id="vk-post-{post-id}">
+      <!-- <div class="vk-post" id="vk-post-{post-id}">
         <a href="{vk-link-to-post}">
           <div class="vk-post-title">
             <div class="vk-post-author">{vk-post-name}</div>
@@ -85,13 +85,11 @@ require SITE_ROOT . 'includes/header.php';
             {vk-post-text}
           </div>
           <div class="vk-post-attachments">
-            <!-- вложение - фото -->
             <span class="vk-post-attachment">
               <a href="{link-to-photo}">
                 <img src="{link-to-photo-preview}">
               </a>
             </span>
-            <!-- вложение - документ -->
             <span class="vk-post-attachment-description">
               <a href="{link-to-document}">
                 {name-of-document}
@@ -99,9 +97,10 @@ require SITE_ROOT . 'includes/header.php';
             </span>
           </div>
         </a>
-      </div>
+      </div> -->
       <!-- много div-ов -->
     </div>
+    <script type="text/javascript" src="/js/vk.js"></script>
   </section>
 <?php
 require SITE_ROOT . 'includes/footer.php';
