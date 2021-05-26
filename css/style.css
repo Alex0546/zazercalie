@@ -183,34 +183,28 @@ footer a:hover {
 
 /* 6 - VK-wall
  ***********************************/
-#vk-wall {
-
+ .vk-post {
+    margin: 6px 0;
+    padding: .6em .8em;
+    background: rgba(0,0,0,.07);
+    white-space: pre-wrap;
+    word-break: break-word;
 }
-.vk-post {
-
+.vk-post > a {
+    text-decoration: none;
+    color: #333;
 }
-/*
-#vk-post-{post-id} {
-
-}
-*/
-.vk-post-title {
-
-}
-.vk-post-author {
-
+.vk-post-title, .vk-post-content {
+    margin: 0 0 .6em 0;
 }
 .vk-post-date {
-
+    font-size: .9em;
+    color: #aaa;
 }
-.vk-post-avatar {
-
-}
-.vk-post-content {
-
-}
-.vk-post-attachments {
-
+.vk-post-attachments a img {
+    width: auto;
+    height: 190px;
+    padding: 4px;
 }
 
 /* 7 - Timetable

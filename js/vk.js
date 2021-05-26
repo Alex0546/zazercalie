@@ -37,7 +37,7 @@
             var text = post.text;
             var s = "";
             s += "<div class=\"vk-post\" id=\"vk-post-" + id + "\">";
-            s += "<a href=\"" + link + "\">";
+            s += "<a href=\"" + link + "\" target=\"_blank\">";
             s += "<div class=\"vk-post-title\">";
             //s += "<div class=\"vk-post-author\">" + name_of_group + "</div>";
             s += "<div class=\"vk-post-date\">" + date + "</div>";
@@ -45,7 +45,7 @@
             s += "</div>";
             s += "<div class=\"vk-post-content\">";
             s += text;
-            s += "</div>";
+            s += "</div></a>";
             if ('attachments' in post) {
                 s += "<div class=\"vk-post-attachments\">";
                 var attachments = post.attachments;
@@ -95,7 +95,6 @@
                 }
                 s += "</div>";
             }
-            s += "</a>";
             s += "</div>";
             result.push(s);
         }
