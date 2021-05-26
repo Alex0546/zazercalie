@@ -54,21 +54,21 @@
                     var type = attachment['type'];
                     if (type == "photo") {
                         var url = "";
-                        if ('photo_2560' in attachment)
+                        if ('photo_2560' in attachment.photo)
                             url = attachment['photo']['photo_2560'];
-                        else if ('photo_1280' in attachment)
+                        else if ('photo_1280' in attachment.photo)
                             url = attachment['photo']['photo_1280'];
-                        else if ('photo_807' in attachment)
+                        else if ('photo_807' in attachment.photo)
                             url = attachment['photo']['photo_807'];
-                        else if ('photo_604' in attachment)
+                        else if ('photo_604' in attachment.photo)
                             url = attachment['photo']['photo_604'];
-                        else if ('photo_130' in attachment)
+                        else if ('photo_130' in attachment.photo)
                             url = attachment['photo']['photo_130'];
                         else
                             url = attachment['photo']['photo_75'];
                         s += "<span class=\"vk-post-attachment\">";
                         s += "<a href=\"" + url + "\">";
-                        s += "<img src=\"" + url + "\">";
+                        s += "<img src=\"" + (attachment['photo']['photo_604'] || url) + "\">";
                         s += "</a>";
                         s += "</span>";
                     }
