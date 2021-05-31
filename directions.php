@@ -52,7 +52,7 @@ if (!defined('DIR_ID')) {
         echo "\t\t".'<img src="' . $row['photo'] . '" width="95%" alt="Фото '. $row['name'] . '" />';
     }
 
-    echo '<h2 class="back-header"><a href="/directions.php">&#11013; Назад</a></h2>';
+    echo "\t\t".'<h2 class="back-header"><a href="/directions.php">&#11013; Назад</a></h2>';
 } else {
     echo "Направление не найдено.";
 }

@@ -259,7 +259,7 @@ footer a:hover {
     display: inline-block;
     width: 33%;
     box-sizing: border-box;
-    padding: 0 10px 10px 10px;
+    padding: 0 10px 10px;
 }
 .table-cell:hover {
     cursor: pointer;
