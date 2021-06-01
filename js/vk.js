@@ -39,8 +39,10 @@
             s += "<div class=\"vk-post\" id=\"vk-post-" + id + "\">";
             s += "<a href=\"" + link + "\" target=\"_blank\">";
             s += "<div class=\"vk-post-title\">";
+            //name of group
             //s += "<div class=\"vk-post-author\">" + name_of_group + "</div>";
             s += "<div class=\"vk-post-date\">" + date + "</div>";
+            //avatar of group
             //s += "<div class=\"vk-post-avatar\"><img src=\"" + avarar_of_group + "\"/></div>";
             s += "</div>";
             s += "<div class=\"vk-post-content\">";
@@ -72,26 +74,7 @@
                         s += "</a>";
                         s += "</span>";
                     }
-                    if (type == 'doc') {
-                        var title = attachment['doc']['title'];
-                        var size = attachment['doc']['size'];
-                        var url = attachment['doc']['url'];
-                        s += "<span class=\"vk-post-attachment-description\">";
-                        s += "<a href=\"" + url + "\">";
-                        s += title;
-                        s += " (" + size + " kB)";
-                        s += "</a>";
-                        s += "</span>";
-                    }
-                    if (type == 'link') {
-                        var title = attachment['link']['title'];
-                        var url = attachment['link']['url'];
-                        s += "<span class=\"vk-post-attachment-description\">";
-                        s += "<a href=\"" + url + "\">";
-                        s += title;
-                        s += "</a>";
-                        s += "</span>";
-                    }
+//need to add...
                 }
                 s += "</div>";
             }
