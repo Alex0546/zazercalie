@@ -44,7 +44,18 @@ if (!defined('DIR_ID')) {
 ?>
     </div>
 <?php    
+} else if (defined('DIR_OK')) {
+    echo "\t\t".'<h2 class="sub-header">' . $row['name'] . '</h2>'."\n"
+        .  "\t\t<p>" . $row['desc'] . "</p>\n";
 
+    if ($row['photo']) {
+        echo "\t\t".'<img src="' . $row['photo'] . '" width="95%" alt="Фото '. $row['name'] . '" />';
+    }
+
+    echo "\t\t".'<h2 class="back-header"><a href="/directions.php">&#11013; Назад</a></h2>';
+} else {
+    echo "Направление не найдено.";
+}
 ?>
 
   </section>
