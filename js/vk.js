@@ -74,7 +74,26 @@
                         s += "</a>";
                         s += "</span>";
                     }
-//need to add...
+                    if (type == 'doc') {
+                        var title = attachment['doc']['title'];
+                        var size = attachment['doc']['size'];
+                        var url = attachment['doc']['url'];
+                        s += "<span class=\"vk-post-attachment-description\">";
+                        s += "<a href=\"" + url + "\">";
+                        s += title;
+                        s += " (" + size + " kB)";
+                        s += "</a>";
+                        s += "</span>";
+                    }
+                    if (type == 'link') {
+                        var title = attachment['link']['title'];
+                        var url = attachment['link']['url'];
+                        s += "<span class=\"vk-post-attachment-description\">";
+                        s += "<a href=\"" + url + "\">";
+                        s += title;
+                        s += "</a>";
+                        s += "</span>";
+                    }
                 }
                 s += "</div>";
             }
